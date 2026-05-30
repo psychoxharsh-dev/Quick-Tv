@@ -73,7 +73,7 @@ body { font-family:'Nunito',sans-serif; background:#f0f4ff; min-height:100vh; di
   </div>
   <div class="cashback-box">
     <div class="cashback-label">TOTAL CASHBACK</div>
-    <div class="cashback-amount"><span>₹</span>25</div>
+    <div class="cashback-amount"><span>₹</span>22</div>
     <div class="badges">
       <div class="badge">Instant</div>
       <div class="badge">Guaranteed</div>
@@ -89,7 +89,7 @@ body { font-family:'Nunito',sans-serif; background:#f0f4ff; min-height:100vh; di
   <div class="step"><div class="step-num">1</div><div class="step-text">Enter Your Wallet Number & Submit.</div></div>
   <div class="step"><div class="step-num">2</div><div class="step-text">Install & Register Quick Tv App.</div></div>
   <div class="step"><div class="step-num">3</div><div class="step-text">Buy 1rs Trail Quick Tv App.</div></div>
-  <div class="step"><div class="step-num">4</div><div class="step-text">Done You Will Get <span class="highlight">₹25</span> Cashback in Your Wallet.</div></div>
+  <div class="step"><div class="step-num">4</div><div class="step-text">Done You Will Get <span class="highlight">₹22</span> Cashback in Your Wallet.</div></div>
   <div class="powered">Powered by <span>CashFlix ⚡</span></div>
 </div>
 
@@ -100,14 +100,14 @@ body { font-family:'Nunito',sans-serif; background:#f0f4ff; min-height:100vh; di
     <p>Offer temporarily paused.<br>Please try again later!</p>
     <a class="paused-btn" href="https://cashflix.site"><i class="fas fa-compass"></i> Explore more offers <i class="fas fa-arrow-right"></i></a>
   </div>
-  <div class="paused-footer"><i class="fas fa-bolt"></i> Powered by <span>CashFlix</span></div>
+  <div class="paused-footer"><i class="fas fa-bolt"></i> Powered by <span>CashFlix⚡</span></div>
 </div>
 
 <div id="toastMessage" class="toast">✅ Success! Redirecting you now...</div>
 
 <script>
 const OFFER_NAME = 'Quick Tv';
-const AFFILIATE_LINK = 'https://track.inrflash.com/click/?offer_id=83&pub=114';
+const AFFILIATE_LINK = 'https://rb.gy/zqu4bj';
 
 async function checkOfferStatus() {
   try {
@@ -159,7 +159,7 @@ function handleSubmit() {
   submitBtn.disabled = true;
   
   saveClick(phone);
-  const affiliateLink = AFFILIATE_LINK + '&affsub=' + phone;
+  const affiliateLink = AFFILIATE_LINK + '&sub_aff_id=' + phone;
   const link = 'https://publisher.cashflix.site/api/redirect?url=' + encodeURIComponent(affiliateLink);
   
   document.getElementById('toastMessage').classList.add('show');
